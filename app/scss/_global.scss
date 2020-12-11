@@ -1,0 +1,86 @@
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*,*::before, *::after{
+    box-sizing:inherit;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+ul,li{
+    list-style:none;
+    margin:0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    font-size: inherit;
+}
+
+body{
+    min-width:320px;
+    position: relative;
+    background-color: #FFEEE6;
+}
+
+.container{
+    max-width:1250px;
+    margin:0 auto;
+}
+.header{
+    width: 100vw;
+    height: 100px;
+    margin-top: -55px;
+    z-index: 10;
+    background-color: #FFEEE6;
+    position: fixed;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .GB-logo{
+        padding:25px 0 0 30px;
+    }
+}
+.page-section{
+    min-height: 100vh;
+    margin-top: 50px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.title{
+    font-size: 55px;
+    line-height: 78px;
+    @extend %suisse-bold;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+
+.skills{
+    margin:50px auto;
+}
+.link{
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+.match__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button{
+    outline: none;
+}
